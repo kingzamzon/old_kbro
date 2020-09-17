@@ -1,0 +1,209 @@
+ 
+ <html>
+     <head>   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>  Vue.component('validation-provider', VeeValidate.ValidationProvider);</script>
+        <script src="vuelidate/dist/vuelidate.min.js"></script>
+<script src="vuelidate/dist/validators.min.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+ </html>
+ <div class ="header">
+    <div class ="nav">
+        <div class ="nav1"><a href="index.html">adannar</a></div>
+                    <div class="navia"><a href="#howdo">how does it work</a></div>
+                    <div class="navib"><a href="#rap1">resellers</a></div>
+                    <div class="navic"><a href="#supp">suppliers</a></div>
+                    <div class ="navii"><a href="#">contact</a>
+                     </div>
+                     </div>      
+            </div>
+            <div class ="wrapper">
+                <div class="wrap">
+            <div class="aheader">
+            earn from home
+            </div>
+    <div class="bheader">
+        <p>start with zero investment to earn from home</p>
+        <p>sell and resell with adanna today</p>
+    </div>
+<div class="logo">
+    <img src ="download app store.png" height="50px">
+    <img src ="get-it-on-google-play-icon-logo.png" height="50px">
+    
+</div>
+</div>
+<div class="very">
+        <div class="veri" data-aos="fade-up">  
+        <p><img src="mark.png"></p>
+thank you for registering with adannar as a supplier.
+<br> you will be updated when our product is officially lunched
+{{name}}
+</div>
+</div>
+<script>
+      AOS.init({
+  duration:1500,
+      })
+</script>
+<style>
+  .holder{
+         width:300px;
+         height:30px;
+     }
+     .form{
+         flex:1;
+    margin-left:100px;
+    margin-top:50px;
+    
+     }
+     .wrapper{
+         background-color:rgb(248, 247, 245);
+         margin-left:-10px;
+         height:700px;
+ 
+         margin-right:-10px;
+         display:flex;
+     }
+    .wrap{
+        flex:1;
+        }
+        .header{
+       background: white;
+       
+    
+        }
+      .aheader{
+       margin-top: 60px;
+       color:black;
+       font-size:70px;
+       margin-left:120px;
+       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .bheader{
+       color:black;
+       font-size:30px;
+       margin-left:120px;
+       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       color: gray;
+        }
+        .nav{
+        display: flex;
+        }
+        .nav1{
+            flex:5;
+           margin-left: 30px;
+           color: rgb(80, 80, 204);
+           font-size:25px;
+        }
+        .nav1 a{
+        text-decoration: none;
+        color:rgb(219, 123, 219);
+        }
+        .navia{
+            flex:1.5;
+            color: rgb(155, 41, 41);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:20px; 
+            
+        }
+        .navia a{
+        text-decoration:none;
+        color: rgb(219, 123, 219);
+        }
+        .navia a:hover{
+            color:gray;
+        }
+            .navib{
+            flex:1;
+            color: rgb(155, 41, 41);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:20px;   
+        }
+        .navib a{
+        text-decoration:none;
+        color: rgb(219, 123, 219);
+        }
+        .navib a:hover{
+            color:gray;}
+        .navic{
+            flex:1;
+            color: rgb(155, 41, 41);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:20px;
+            }
+            .navic a{
+        text-decoration:none;
+        color: rgb(219, 123, 219);
+        }
+        .navic a:hover{
+            color:gray;
+        }
+        .navii{
+            flex:1;
+            color: rgb(155, 41, 41);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:20px;
+        }
+        .navii a{
+            text-decoration: none;
+         color: rgb(155, 41, 41);
+            
+           
+        }
+    .placeholder{
+        margin-top:100px;
+        margin-left: 120px;
+    }
+    .holder{
+        height:40px;
+        width: 300px;
+        margin-left:-5px;
+    }
+    .logo{
+        margin-left: 50px;
+        margin-top:30px;
+        padding-left:70px;
+    }
+    .select{
+        height:40px;
+        border-bottom-left-radius:4px;  
+        border-top-left-radius:4px;
+    }
+    .btns{
+    height:40px;
+    box-shadow:5px 5px 10px 10px white;
+    color: white;
+    }
+    .mar{
+        margin-top:10px;
+        width:300px;
+        color:rgb(104, 101, 101);
+        font-family: cursive;;
+    
+    }
+    .error{
+     border:1px solid gray;
+     box-shadow:1px 1px 5px 5px silver;
+     width:200px;
+    }
+    .very{
+    margin-top:50px;
+    width:250px;
+    }
+    .veri{
+     margin-left:-200px;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size:30px;
+     text-align: center;
+     margin-right:100px;
+     height:500px;
+     color:rgb(102, 18, 18);
+    }
+    .f-img{
+        margin-left:30px;
+    }
+</style>
+<script>import { name } from "form.html";
+   const app = new Vue({
+  el: '#app',})
+</script>

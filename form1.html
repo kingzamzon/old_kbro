@@ -1,0 +1,301 @@
+<html>
+    <body>
+        <html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>  Vue.component('validation-provider', VeeValidate.ValidationProvider);</script>
+        <script src="vuelidate/dist/vuelidate.min.js"></script>
+<script src="vuelidate/dist/validators.min.js"></script>
+    </head>
+    <body>
+        
+        <div class ="header">
+            <div class ="nav">
+                <div class ="nav1"><a href="index.html">adannar</a></div>
+                            <div class="navia"><a href="howdo">how does it work</a></div>
+                            <div class="navib"><a href="#rap1">resellers</a></div>
+                            <div class="navic"><a href="#supp">suppliers</a></div>
+                            <div class ="navii"><a href="#">contact</a>
+                             </div>
+                             </div>       
+            </div>
+            <div class ="wrapper">
+                <div class="wrap">
+            <div class="aheader">
+            earn from home
+            </div>
+            <div class="bheader">
+                <p>start with zero investment to earn from home</p>
+                <p> resell with adanna today</p>
+            </div>
+        <div class="logo">
+            <img src ="download app store.png" height="50px">
+            <img src ="get-it-on-google-play-icon-logo.png" height="50px">
+            
+        </div>
+       </div>
+<form class="form" action="resver.html" @submit="register" method="POST" id="app"   novalidate="true" >
+    <marquee class= "mar">register now and we will get in touch soon!</marquee>
+    <div class="error"   v-if="errors.length">
+       <b>correct the following errors</b>
+       <br> <img src="error.jpg" class="f-img">
+       <ul>
+       <li v-for="error in errors">{{error}}</li>
+       </ul>
+    </div>
+    <p>name</p>
+    <p><input type="text" class ="holder" id ="name" name="name" v-model="name"></p>
+     email
+     <p>
+     <input type="email"class ="holder" id ="email" name="email"  v-model="email">
+     </p>
+    <p>Phone number</p>
+        <p><input type="tel" class ="holder" id ="phone" name="phone"  v-model="phone"></p>
+        <p>city</p>
+    <p> <input type="text"class ="holder" id ="city"name="city"  v-model="city"></p>
+     <p>State</p><p><select class="holder" id="state" name="state"  v-model="state">
+       
+    
+    <option>abuja</option>
+    <option>Abuja</option>
+     <option>Abia</option>
+   <option>Adamawa</option>
+   <option>Akwa Ibom</option>
+    <option>Anambra</option>
+    <option>Bauchi</option>
+     <option>Bayelsa</option>
+    <option>Benue</option>
+    <option>Borno</option>
+    <option>Cross River</option>
+    <option>delta</option>
+    <option>Ebonyi</option>
+    <option>Edo</option>
+    <option>Ekiti</option>
+    <option>Enugu</option>
+    <option>Gombe</option>
+    <option>Imo</option>
+    <option>Jigawa</option>
+    <option>Kaduna</option>
+    <option>Kano</option>
+    <option>Katsina</option>
+    <option>Kebbi</option>
+    <option>Kogi</option>
+    <option>Kwara</option>
+     <option>Lagos</option>
+      <option>Nassarawa</option>
+    <option>Niger</option>
+    <option>Ogun</option>
+    <option>Ondo</option>
+    <option>Osun</option>
+    <option>Oyo</option>
+    <option>Plateau</option>
+    <option>Rivers</option>
+    <option>Sokoto</option>
+    <option>Taraba</option>
+    <option>Yobe</option>
+    <option>Zamfara</option>
+    </select></p>
+    <button class="btns" type="submit" value="submit">Register here</button>
+
+ </form>
+ </body>
+ <style>
+     body{
+         
+     }
+     .holder{
+         width:300px;
+         height:30px;
+         scroll-behavior:smooth;
+         scrollbar-3dlight-color: chartreuse;
+         margin-top:-10px;
+     }
+     .form{
+         flex:1;
+    margin-left:100px;
+    margin-top:50px;
+    
+     }
+     .wrapper{
+         background-color:rgb(248, 247, 245);
+         margin-left:-10px;
+         height:700px;
+ 
+         margin-right:-10px;
+         display:flex;
+     }
+    .wrap{
+        flex:1;
+        }
+        .header{
+       background: white;
+       
+    
+        }
+        .aheader{
+       margin-top: 60px;
+       color:black;
+       font-size:70px;
+       margin-left:120px;
+       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .bheader{
+       color:black;
+       font-size:30px;
+       margin-left:120px;
+       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       color: gray;
+        }
+        .nav{
+        display: flex;
+        }
+        .nav1{
+            flex:5;
+           margin-left: 30px;
+           color: rgb(80, 80, 204);
+           font-size:25px;
+        }
+        .nav1 a{
+        text-decoration: none;
+        color:rgb(219, 123, 219);
+        }
+        .navia{
+            flex:1.5;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:20px; 
+            
+        }
+        .navia a{
+        text-decoration:none;
+        color: rgb(219, 123, 219);
+        }
+        .navia a:hover{
+            color:gray;}
+            .navib{
+            flex:1;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:20px;
+            
+        }
+        .navib a{
+        text-decoration:none;
+        color: rgb(219, 123, 219);
+        }
+        .navib a:hover{
+            color:gray;}
+        .navic{
+            flex:1;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:20px;
+            }
+            .navic a{
+        text-decoration:none;
+        color: rgb(219, 123, 219);
+        }
+        .navic a:hover{
+            color:gray;
+        }
+        .navii{
+            flex:1;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:20px;
+        }
+        .navii a{
+        text-decoration:none;
+        color: rgb(219, 123, 219);
+        }
+        .navia a:hover{
+            color:gray;
+        }
+        .navii a{
+            text-decoration: none;
+         color: rgb(155, 41, 41);
+            
+           
+        }
+    .placeholder{
+        margin-top:100px;
+        margin-left: 120px;
+    }
+    .holder{
+        height:40px;
+        width: 300px;
+        margin-left:-5px;
+    }
+    .logo{
+        margin-left: 50px;
+        margin-top:30px;
+        padding-left:70px;
+    }
+    .select{
+        height:40px;
+        border-bottom-left-radius:4px;  
+        border-top-left-radius:4px;
+    }
+    .btns{
+    height:40px;
+    background-color:rgb(155, 41, 41);
+    box-shadow:5px 5px 10px 10px white;
+    color: white;
+    }
+    .mar{
+        margin-top:10px;
+        width:300px;
+        color:rgb(104, 101, 101);
+        font-family: cursive;;
+    
+    }.error{
+     border:1px solid gray;
+     box-shadow:1px 1px 5px 5px silver;
+     width:250px;
+     color:red;
+    }
+    .f-img{
+    margin-left:60px;
+    }
+ </style>
+ <script>
+      const app = new Vue({
+  el: '#app',
+  data: {
+    errors: [],
+    name: null,
+    email: null,
+    movie: null
+  },
+  methods: {
+    register: function (e) {
+      this.errors = [];
+
+      if (!this.name) {
+        this.errors.push("Name required.");
+      }
+      if (!this.phone) {
+        this.errors.push("phone required.");
+      }
+      if (!this.state) {
+        this.errors.push("state required.");
+      }
+      if (!this.city) {
+        this.errors.push("city required.");
+      }
+      if (!this.email) {
+        this.errors.push('Email required.');
+      } else if (!this.validEmail(this.email)) {
+        this.errors.push('Valid email required.');
+      }
+
+      if (!this.errors.length) {
+        return true;
+      }
+      e.preventDefault();
+    },
+    validEmail: function (email) {
+      var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    },
+  }
+})
+
+ </script>
+</html>
